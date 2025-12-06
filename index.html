@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Evaluativa 8 - Solución Completa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <nav id="main-nav">
+        <div class="nav-container">
+            <div class="logo">AE8</div>
+            <button id="hamburger-btn">☰</button>
+            
+            <!-- El menú se generará dinámicamente para el Ejercicio 13, 
+                 pero incluimos estructura base para el Ejercicio 1 -->
+            <ul id="dynamic-menu" class="menu-items">
+                <!-- Se llenará con AJAX -->
+                <!-- Fallback estático para probar Ejercicio 1 antes de que cargue el JSON -->
+                <li><a href="#section-banner">Inicio</a></li>
+                <li><a href="#section-slider">Slider</a></li>
+                <li><a href="#section-products">Productos</a></li>
+                <li><a href="#section-users">Usuarios</a></li>
+                <li><a href="#section-module">Módulo Final</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- EJERCICIO 2: Banner Animado -->
+    <!-- EJERCICIO 5: Carga AJAX del Banner -->
+    <header id="section-banner" class="section-area">
+        <div id="banner-container">
+            <!-- El contenido se cargará vía AJAX -->
+            <div class="loading">Cargando Banner...</div>
+        </div>
+    </header>
+
+    <!-- EJERCICIO 11: Notificaciones -->
+    <div id="notification-area">
+        <span id="notif-icon">🔔</span>
+        <span id="notif-count">0</span> Nuevas alertas
+    </div>
+
+    <main>
+        <!-- EJERCICIO 3: Slider Automático -->
+        <section id="section-slider" class="section-area">
+            <h2>3. Slider Automático</h2>
+            <div class="slider-box">
+                <img src="img/slider/1.jpg" class="slide active" alt="Slide 1">
+                <img src="img/slider/2.jpg" class="slide" alt="Slide 2">
+                <img src="img/slider/3.jpg" class="slide" alt="Slide 3">
+            </div>
+        </section>
+
+        <!-- EJERCICIO 7: Animación Encadenada -->
+        <section class="section-area">
+            <h2>7. Animación Encadenada</h2>
+            <button id="btn-animate-box">Animar Cuadro</button>
+            <div id="chain-box"></div>
+        </section>
+
+        <!-- EJERCICIO 8: Tabla de Productos (AJAX + SlideDown) -->
+        <section id="section-products" class="section-area">
+            <h2>8. Tabla de Productos (AJAX)</h2>
+            <table id="products-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filas generadas dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- EJERCICIO 10: Fetch + Tarjetas + Parpadeo -->
+        <section class="section-area">
+            <h2>10. Tarjetas con Fetch y Parpadeo</h2>
+            <div id="cards-container" class="grid-container">
+                <!-- Tarjetas generadas dinámicamente -->
+            </div>
+        </section>
+
+        <!-- EJERCICIO 12: Carrusel Manual -->
+        <section class="section-area">
+            <h2>12. Carrusel Manual</h2>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev">❮</button>
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+                        <img src="img/carrusel/2.jpg" alt="C1">
+                        <img src="img/carrusel/3.jpg" alt="C2">
+                        <img src="img/carrusel/4.jpg" alt="C3">
+                        <img src="img/carrusel/1.jpg" alt="C4">
+                    </div>
+                </div>
+                <button class="carousel-btn next">❯</button>
+            </div>
+        </section>
+
+        <!-- EJERCICIO 14: Sistema de Usuarios -->
+        <section id="section-users" class="section-area">
+            <h2>14. Lista de Usuarios</h2>
+            <div id="users-list">
+                <!-- Usuarios generados dinámicamente -->
+            </div>
+        </section>
+
+        <!-- EJERCICIO 15: Módulo Completo -->
+        <section id="section-module" class="section-area module-wrapper">
+            <h2>15. Módulo Integrado (Tienda)</h2>
+            
+            <div class="shop-header">
+                <input type="text" id="shop-search" placeholder="Buscar productos...">
+                <div id="cart-counter-box">
+                    Carrito: <span id="cart-counter">0</span>
+                </div>
+            </div>
+
+            <div id="shop-container" class="grid-container">
+                <!-- Productos del ejercicio 15 -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- EJERCICIO 6: Modal al final de página -->
+    <footer id="main-footer">
+        <p>AE8</p>
+    </footer>
+
+    <!-- Modal Oculto -->
+    <div id="end-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>¡Llegaste al final!</h3>
+            <p>Gracias</p>
+        </div>
+    </div>
+
+    <!-- Script Principal -->
+    <script src="script.js"></script>
+</body>
+</html>
