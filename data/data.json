@@ -1,0 +1,6 @@
+[
+    { "id": 1, "nombre": "webcam", "precio": 1200, "imagen": "img/productos/webcam.jpg" },
+    { "id": 2, "nombre": "Ram SSD", "precio": 800, "imagen": "img/productos/ssd.jpg" },
+    { "id": 3, "nombre": "Audifonos Sony", "precio": 150, "imagen": "img/productos/sony.jpg" },
+    { "id": 4, "nombre": "Tablet Air", "precio": 400, "imagen": "img/productos/id.jpg" }
+]

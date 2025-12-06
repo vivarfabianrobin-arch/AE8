@@ -1,0 +1,5 @@
+[
+    { "id": 1, "nombre": "Alex Aroni", "email": "alex23@gmail.com", "ciudad": "Cajamarca" },
+    { "id": 2, "nombre": "Alonso Vicharra", "email": "alonso121@gmail.com", "ciudad": "Lima" },
+    { "id": 3, "nombre": "Renzo Alexander", "email": "renso323@gmail.com", "ciudad": "Iquitos" }
+]

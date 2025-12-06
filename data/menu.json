@@ -1,0 +1,9 @@
+{
+ "menu": [
+ { "texto": "Inicio", "url": "#section-banner" },
+ { "texto": "Slider", "url": "#section-slider" },
+ { "texto": "Productos", "url": "#section-products" },
+ { "texto": "Usuarios", "url": "#section-users" },
+ { "texto": "Módulo", "url": "#section-module" }
+ ]
+}
